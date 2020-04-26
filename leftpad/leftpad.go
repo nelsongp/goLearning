@@ -14,7 +14,7 @@ marcado hacia la izquierda con espacios y el tamaño del int.
 si el string es mas largo que el especificado en el legth
 el string original es retornado
 */
-func format(s string, size int) string {
+func Format(s string, size int) string {
 	return FormatRune(s, size, defaultChar)
 }
 
