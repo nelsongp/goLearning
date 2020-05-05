@@ -8,6 +8,17 @@ func main() {
 	fmt.Println(x, s)
 	fmt.Println(sumaEntero([]int{1, 2, 3, 4, 5}...))
 	fmt.Println(sumaSlice([]int{1, 2, 3, 4, 5}))
+
+	//funcion anonima asignada a variable
+	f := func() {
+		fmt.Println("soy anonima")
+	}
+
+	//llamada a variable con funcoin
+	f()
+
+	v := hola()
+	fmt.Println(v())
 }
 
 func bar() (int, string) {
@@ -34,4 +45,10 @@ func sumaSlice(x []int) int {
 
 func foo() {
 	fmt.Println("Retorno desde defer")
+}
+
+func hola() func() string {
+	return func() string {
+		return "hola"
+	}
 }
