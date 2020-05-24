@@ -1,0 +1,1 @@
+2020/05/23 18:22:06 un error ocurrio open sin-archivo.txt: El sistema no puede encontrar el archivo especificado.
